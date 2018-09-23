@@ -1,9 +1,15 @@
 <h1>A site about pixelfairys?</h1>
 
+<p id="counter">You have been on this site for 0 seconds</p>
 <style>
 
 </style>
 
 <script>
-
+var time = 1
+function myFunction() {
+  document.getElementById("counter").innerHTML = "You have been on this page for " + time + " seconds"
+  time += 1
+}
+setInterval(myFunction, 1000)
 </script>
