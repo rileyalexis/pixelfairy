@@ -1,11 +1,14 @@
+<body>
 <h1>A site about pixelfairys?</h1>
+<h1>This site has nothing to do with pixelfairies but you can use your magic!</h1>
 
 <p id="counter">You have been on this site for 0 seconds</p>
-<style>
-
-</style>
+<input type="button" id="button" onclick="changecolor()">
 
 <script>
+function changecolor(){
+  document.body.style.backgroundColor = rgb(Math.floor(Math.random() * 256),Math.floor(Math.random() * 256),Math.floor(Math.random() * 256))
+}
 var time = 1
 function myFunction() {
   document.getElementById("counter").innerHTML = "You have been on this page for " + time + " seconds"
@@ -13,3 +16,8 @@ function myFunction() {
 }
 setInterval(myFunction, 1000)
 </script>
+
+<style>
+
+</style>
+</body>
